@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="assets/css/libs/bootstrap-rtl.min.css">
+  <link rel="stylesheet" href="assets/css/libs/uicons/uicons-bold-rounded.css">
+  <link rel="stylesheet" href="assets/css/libs/uicons/uicons-bold-solid.css">
+  <link rel="stylesheet" href="assets/css/libs/uicons/uicons-bold-regular.css">
+  <link rel="stylesheet" href="assets/css/libs/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="assets/css/theme/style.css">
+  <link rel="stylesheet" href="assets/css/theme/license.css">
+  <title>Licenses</title>
+</head>
+
+<body>
+  <!-- :: MAIN :: -->
+  <main class="d-flex align-items-start justify-content-start" id="main">
+    <!-- :: NAVBAR :: -->
+    <nav class="theme-navbar">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center justify-content-between">
+          <!-- right-content -->
+          <div class="right-content d-flex align-items-center">
+            <!-- page-title -->
+            <div class="page-title">التراخيـــص</div>
+          </div>
+          <!-- search-area -->
+          <div class="search-area d-inline-flex align-items-center position-relative">
+            <input type="text" placeholder="بحث">
+            <i class="fi fi-rr-search position-absolute"></i>
+          </div>
+          <!-- user-area -->
+          <div class="user-area position-relative d-flex align-items-center">
+            <!-- options -->
+            <div class="options d-flex align-items-center">
+              <!-- option -->
+              <a href="#" aria-label="Link" class="option active" title="الاشعارات">
+                <i class="fi fi-rr-bell"></i>
+              </a>
+              <!-- option -->
+              <a href="#" aria-label="Link" class="option" title="اللغة">
+                <i class="fi fi-rr-globe"></i>
+              </a>
+            </div>
+            <!-- user-menu -->
+            <div class="user-menu position-relative" id="user-menu">
+              <!-- user -->
+              <div class="user d-flex align-items-center" id="user-btn">
+                <!-- avatar -->
+                <div class="avatar position-relative">
+                  <i class="fi fi-rr-circle-user user-icon"></i>
+                  <span class="name">حمد علي</span>
+                  <i class="fi fi-sr-angle-small-down arrow-icon"></i>
+                </div>
+              </div>
+              <!-- menu -->
+              <div class="menu">
+                <ul class="list-unstyled mb-0">
+                  <li class="menu-item position-relative">
+                    <a href="#">
+                      <i class="fi fi-rr-user"></i>
+                      الحساب الشخصي
+                    </a>
+                  </li>
+                  <li class="menu-item position-relative">
+                    <a href="#">
+                      <i class="fi fi-rr-settings"></i>
+                      الاعدادات
+                    </a>
+                  </li>
+                  <li class="menu-item logout-item position-relative">
+                    <a href="#">
+                      <i class="fi fi-rr-power"></i>
+                      تسجيل الخروج
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- :: ASIDE :: -->
+    <aside>
+      <!-- menu -->
+      <div class="menu">
+        <!-- main-menu -->
+        <ul class="main-menu list-unstyled">
+          <!-- m-item -->
+          <li class="m-item">
+            <a href="#" title="الرئيسية">
+              <i class="fi fi-rr-house-chimney icon"></i>
+            </a>
+          </li>
+          <!-- m-item -->
+          <li class="m-item active">
+            <a href="#" title="بيانات التراخيص وحالتها">
+              <i class="fi fi-rr-folder icon"></i>
+            </a>
+          </li>
+          <!-- m-item -->
+          <li class="m-item">
+            <a href="#" title="الاعدادت">
+              <i class="fi fi-rr-settings icon"></i>
+            </a>
+          </li>
+          <!-- m-item -->
+          <li class="m-item">
+            <a href="#" title="الاسئلة">
+              <i class="fi fi-rr-interrogation icon"></i>
+            </a>
+          </li>
+          <!-- m-item -->
+          <li class="m-item">
+            <a href="#" title="تسجيل خروج">
+              <i class="fi fi-rr-power icon"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- :: MAIN-CONTENT :: -->
+    <div class="main-content">
+      <div class="container-fluid">
+        <!-- page-header -->
+        <div class="page-header">
+          <!-- row -->
+          <div class="row align-items-center">
+            <!-- col -->
+            <div class="col-lg-6 mb-lg-0 mb-4">
+              <!-- page-title -->
+              <h2 class="page-title d-flex align-items-center justify-content-lg-start justify-content-center mb-0" data-gap-x="10px">
+                <i class="fi fi-rr-license"></i>
+                بيانات التراخيص وحالتها
+              </h2>
+            </div>
+            <!-- col -->
+            <div class="col-lg-6 text-lg-right text-center">
+              <!-- actions -->
+              <div class="actions d-flex align-items-center justify-content-lg-end justify-content-center flex-wrap" data-gap-x="10px" data-gap-y="10px">
+                <button type="button" class="theme-btn --fill-warning rounded-pill --has-icon" data-gap-x="10px" data-toggle="modal" data-target="#addNewLicense">
+                  <i class="fi fi-rr-add"></i>
+                  اضافة
+                </button>
+                <button type="button" class="theme-btn --fill-danger rounded-pill --has-icon" data-gap-x="10px">
+                  <i class="fi fi-rr-pencil"></i>
+                  تعديل
+                </button>
+                <button type="button" class="theme-btn --fill-info rounded-pill --has-icon" data-gap-x="10px">
+                  <i class="fi fi-rr-file-export"></i>
+                  تصدير
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- page-content -->
+        <div class="page-content">
+          <!-- table-form -->
+          <div class="table-form">
+            <!-- table -->
+            <table id="myTable" class="cell-border">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>كود الترخيص</th>
+                  <th>عدد الشاشات</th>
+                  <th>تاريخ الانتهاء</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>TX9XD-98N7V-6WMQ6-BX7FG</td>
+                  <td>32</td>
+                  <td>5/6/2025</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>TX9XD-98N7V-6WMQ6-BX7FG</td>
+                  <td>32</td>
+                  <td>5/6/2025</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>TX9XD-98N7V-6WMQ6-BX7FG</td>
+                  <td>32</td>
+                  <td>5/6/2025</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>TX9XD-98N7V-6WMQ6-BX7FG</td>
+                  <td>32</td>
+                  <td>5/6/2025</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- :: MODALS :: -->
+    <div class="modal fade addNewLicenseModal" id="addNewLicense" tabindex="-1" role="dialog" aria-labelledby="addNewLicenseLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5 class="modal-title mb-4" id="addNewLicenseLabel">إضافة ترخيص جديد</h5>
+            <!-- inputs -->
+            <form method="post" action="#" class="inputs d-flex flex-column" data-gap-y="20px">
+              <!-- modal-input -->
+              <div class="modal-input">
+                <label class="input-label" for="licenseNumber">عدد التراخيص المطلوبة</label>
+                <div class="d-flex align-items-center position-relative">
+                  <i class="fi fi-rr-license position-absolute"></i>
+                  <input type="number" id="licenseNumber" placeholder="عدد التراخيص المطلوبة" required>
+                </div>
+              </div>
+              <!-- modal-input -->
+              <div class="modal-input">
+                <label class="input-label" for="allowedSpace">عدد التراخيص المطلوبة</label>
+                <div class="d-flex align-items-center position-relative">
+                  <i class="fi fi-rr-license position-absolute"></i>
+                  <select name="allowedSpace" id="allowedSpace">
+                    <option value="100">100GB</option>
+                    <option value="200">200GB</option>
+                    <option value="300">300GB</option>
+                    <option value="400">400GB</option>
+                  </select>
+                </div>
+              </div>
+              <!-- buttons -->
+              <div class="buttons d-flex align-items-center" data-gap-x="15px">
+                <button type="submit" class="theme-btn --fill-primary w-100">حفظ</button>
+                <button type="button" class="theme-btn --outline-primary w-100" data-dismiss="modal">اغلاق</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="assets/js/jQuery-3.7.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery-datatable.min.js"></script>
+  <script src="assets/js/bundle.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#myTable').DataTable({
+        "oLanguage": {
+          "sSearch": "ابحث:",
+        },
+        "language": {
+          "lengthMenu": "اعرض : _MENU_",
+          "info": "اظهر _START_ الي _END_ من _TOTAL_ مدخل",
+          "paginate": {
+            "first":      "الاول",
+            "last":       "الاخير",
+            "next":       "التالي",
+            "previous":   "السابق"
+          },
+        },
+        "columnDefs": [
+          { width: '1%', targets: 0 }, //step 2, column 1 out of 4
+          { width: '33%', targets: 1 }, //step 2, column 2 out of 4
+          { width: '33%', targets: 2 }, //step 2, column 3 out of 4
+          { width: '33%', targets: 3 }, //step 2, column 4 out of 4
+          {"className": "dt-center", "targets": "_all"}
+        ]
+      });
+    });
+  </script>
+</body>
+
+</html>

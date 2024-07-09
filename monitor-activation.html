@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="assets/css/libs/bootstrap-rtl.min.css">
+  <link rel="stylesheet" href="assets/css/libs/uicons/uicons-bold-rounded.css">
+  <link rel="stylesheet" href="assets/css/libs/uicons/uicons-bold-solid.css">
+  <link rel="stylesheet" href="assets/css/libs/uicons/uicons-bold-regular.css">
+  <link rel="stylesheet" href="assets/css/theme/style.css">
+  <link rel="stylesheet" href="assets/css/theme/monitor-activation.css">
+  <title>Monitor Activation</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- top-area -->
+    <div class="top-area d-flex align-items-center justify-content-between w-100">
+      <button type="button" class="theme-btn --lang-btn"><img src="./assets/images/icons/globe.svg" class="img-fluid mr-2" alt="Globe">English</button>
+      <button type="button" class="btn back-btn --transparent-btn"><img src="./assets/images/icons/chevron-left.svg" class="img-fluid" alt="Back"></button>
+    </div>
+    <!-- content -->
+    <div class="content d-flex align-items-center justify-content-center flex-column text-center">
+      <!-- title -->
+      <h1 class="title mb-5">تفعيل شاشة جديدة</h1>
+      <!-- para -->
+      <p class="para">الرجـــاء ادخــــال كــــود التفعيـــل أو قم بشراء نسخـــة جديــــدة</p>
+      <!-- code-inputs -->
+      <form action="#" method="POST" class="code-inputs">
+        <!-- inputs -->
+        <div class="inputs d-flex align-items-center mt-5 pb-3" dir="ltr">
+          <input type="number" maxlength="1" max="9" name="num-1" class="code-input" oninput="checkInput(this, 1)">
+          <input type="number" maxlength="1" max="9" name="num-2" class="code-input" oninput="checkInput(this, 2)">
+          <input type="number" maxlength="1" max="9" name="num-3" class="code-input" oninput="checkInput(this, 3)">
+          <input type="number" maxlength="1" max="9" name="num-4" class="code-input" oninput="checkInput(this, 4)">
+          <input type="number" maxlength="1" max="9" name="num-5" class="code-input" oninput="checkInput(this, 5)">
+          <input type="number" maxlength="1" max="9" name="num-6" class="code-input" oninput="checkInput(this, 6)">
+          <input type="number" maxlength="1" max="9" name="num-7" class="code-input" oninput="checkInput(this, 7)">
+          <input type="number" maxlength="1" max="9" name="num-8" class="code-input" oninput="checkInput(this, 8)">
+          <input type="number" maxlength="1" max="9" name="num-9" class="code-input" oninput="checkInput(this, 9)">
+          <input type="number" maxlength="1" max="9" name="num-10" class="code-input" oninput="checkInput(this, 10)">
+        </div>
+        <!-- buttons -->
+        <div class="buttons d-flex align-items-center justify-content-center mt-5 pt-3">
+          <button type="submit" class="theme-btn --fill-primary rounded-pill --btn-size-xl" id="submit-btn" disabled>تفعيل الحساب</button>
+          <a href="#" class="theme-btn --outline-primary rounded-pill --btn-size-xl">شراء النسخة</a>
+        </div>
+      </form>
+      <!-- copyright-main-section -->
+      <div class="crt">
+        <img src="./assets/images/logos/mtx.png" class="img-fluid crt-img mr-2" alt="Matrix">
+        <span class="crt-text">Powered by</span>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/jQuery-3.7.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script>
+    // Get all input elements with class "code-input"
+    var codeInputs = document.getElementsByClassName("code-input");
+
+    // Add event listener to each input field
+    for (var i = 0; i < codeInputs.length; i++) {
+      codeInputs[i].addEventListener("input", function () {
+        // Check if all inputs have the correct values
+        var allInputsValid = true;
+        for (var j = 0; j < codeInputs.length; j++) {
+          if (codeInputs[j].value.length !== 1) {
+            allInputsValid = false;
+            break;
+          }
+        }
+
+        // Enable or disable the button based on input validity
+        var btn = document.getElementById("submit-btn");
+        if (allInputsValid) {
+          btn.disabled = false;
+        } else {
+          btn.disabled = true;
+        }
+      });
+    }
+
+    function checkInput(input, currentField) {
+      var inputValue = input.value;
+
+      if (inputValue.length === 1) {
+        if (currentField < 10) {
+          var nextField = currentField + 1;
+          var nextInput = document.getElementsByName("num-" + nextField)[0];
+          nextInput.focus();
+        }
+      } else {
+        input.value = inputValue.slice(0, 1);
+      }
+
+      // Trigger input event to recheck input validity
+      var event = new Event("input");
+      input.dispatchEvent(event);
+    }
+  </script>
+</body>
+
+</html>

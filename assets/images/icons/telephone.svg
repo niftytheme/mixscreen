@@ -1,0 +1,12 @@
+<svg id="Vector_Smart_Object" data-name="Vector Smart Object" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="30" viewBox="0 0 18 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="18" height="30" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_10" data-name="Group 10">
+    <g id="Group_9" data-name="Group 9" clip-path="url(#clip-path)">
+      <path id="Path_11" data-name="Path 11" d="M2.077,0A2.072,2.072,0,0,0,0,2.045V27.955A2.072,2.072,0,0,0,2.077,30H15.923A2.072,2.072,0,0,0,18,27.955V2.045A2.072,2.072,0,0,0,15.923,0ZM1.385,4.773H16.615V24.545H1.385ZM6.923,26.591h4.154a.682.682,0,1,1,0,1.364H6.923a.682.682,0,1,1,0-1.364" fill="#646c7a"/>
+    </g>
+  </g>
+</svg>

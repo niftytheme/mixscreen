@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="327.75px" height="259px" viewBox="0 0 327.75 259" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L30.999 0L30.999 77.001L0 77.001L0 0Z" id="path_1" />
+    <path d="M98 0L98 0L98 73L0 73L0 0L98 0Z" id="path_2" />
+    <path d="M0 0L98 0L98 73L0 73L0 0Z" id="path_3" />
+    <path d="M211 0L211 0L211 211L0 211L0 0L211 0Z" id="path_4" />
+    <path d="M21 0L21 0L21 21L0 21L0 0L21 0Z" id="path_5" />
+    <path d="M31 0L31 0L31 77.001L0 77.001L0 0L31 0Z" id="path_6" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+    <clipPath id="clip_2">
+      <use xlink:href="#path_2" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+    <clipPath id="clip_3">
+      <use xlink:href="#path_3" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+    <clipPath id="clip_4">
+      <use xlink:href="#path_4" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+    <clipPath id="clip_5">
+      <use xlink:href="#path_5" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+    <clipPath id="clip_6">
+      <use xlink:href="#path_6" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="Group">
+    <path d="M82 244.5C82 236.492 119.774 230 166.37 230C212.966 230 250.74 236.492 250.74 244.5C250.74 252.508 212.966 259 166.37 259C119.774 259 82 252.508 82 244.5Z" id="Ellipse_3" fill="#E6E6E6" fill-rule="evenodd" stroke="none" />
+    <path d="M45 121C45 54.1735 99.1735 0 166 0C232.826 0 287 54.1735 287 121C287 187.826 232.826 242 166 242C99.1735 242 45 187.826 45 121Z" id="Oval" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+    <path d="M61 121.5C61 63.234 108.234 16 166.5 16C224.766 16 272 63.234 272 121.5C272 179.766 224.766 227 166.5 227C108.234 227 61 179.766 61 121.5Z" id="Ellipse_2" fill="#12D533" fill-rule="evenodd" stroke="none" />
+    <path d="M304 193.5C304 187.701 308.701 183 314.5 183C320.299 183 325 187.701 325 193.5C325 199.299 320.299 204 314.5 204C308.701 204 304 199.299 304 193.5Z" id="Ellipse_1" fill="#5A9AFE" fill-rule="evenodd" stroke="none" />
+    <g id="Vector_Smart_Object" transform="translate(0 16)">
+      <g id="Group_62">
+        <g id="Mask-Group">
+          <path d="M0 0L30.999 0L30.999 77.001L0 77.001L0 0Z" id="Rectangle_34" fill="none" fill-rule="evenodd" stroke="none" />
+          <g clip-path="url(#clip_1)">
+            <path d="M1.813 49.319C1.78344 47.5535 1.97425 45.7912 2.38101 44.073C2.5726 43.2042 2.48799 42.2973 2.13901 41.479C-0.484 34.3 -0.444 26.98 0.916 19.605C2.07507 14.1716 3.62715 8.82962 5.55997 3.62106C5.8628 2.22735 6.77436 1.04274 8.044 0.393C9.50384 -0.29758 11.2336 -0.0623455 12.456 0.992999C13.796 1.9154 14.3764 3.60486 13.886 5.156C13.019 7.966 12.13 10.772 11.257 13.581C9.54386 18.7325 8.62893 24.1158 8.54399 29.544C8.54399 30.802 8.66899 32.06 8.78399 33.317C8.84499 33.975 8.92599 34.43 9.89299 33.888C14.9083 30.9259 21.2385 31.4049 25.751 35.088C28.901 37.661 30.025 41.156 29.713 45.122C29.3827 50.6999 24.9012 55.1318 19.32 55.4C16.7883 55.5835 14.2651 54.9445 12.126 53.578C11.791 53.373 11.433 53.033 11.099 53.259C10.71 53.525 10.852 53.987 11.018 54.407C13.2489 60.4864 17.9263 65.352 23.913 67.821C25.164 68.344 26.499 68.539 27.767 68.967C30.435 69.867 31.535 71.809 30.754 74.253C30.044 76.474 27.96 77.43 25.298 76.819C17.2407 75.1106 10.2355 70.1752 5.915 63.163C3.18839 59.0651 1.75963 54.2408 1.815 49.319M21.315 43.757C21.4004 42.9323 21.0508 42.1224 20.392 41.619C18.573 39.847 14.507 40.012 12.828 41.907C12.5852 42.1166 12.4424 42.4192 12.435 42.7398C12.4276 43.0605 12.5562 43.3694 12.789 43.59C13.8693 44.9215 15.229 45.9992 16.772 46.747C19.456 47.879 21.307 46.731 21.314 43.758" id="Group_61" fill="#5C9CFF" fill-rule="evenodd" stroke="none" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Vector Smart Object">
+      <path d="M98 0L98 0L98 73L0 73L0 0L98 0Z" id="Vector-Smart-Object" fill="none" stroke="none" transform="translate(117 85)" />
+      <g id="Group_60" clip-path="url(#clip_2)" transform="translate(117 85)">
+        <g id="Mask-Group">
+          <path d="M0 0L98 0L98 73L0 73L0 0Z" id="Rectangle_33" fill="none" fill-rule="evenodd" stroke="none" />
+          <g clip-path="url(#clip_3)">
+            <path d="M0 38.573C0.295 35.066 1.873 32.343 5.119 30.873C8.895 29.166 12.319 30.068 15.187 32.914C21.268 38.955 27.277 45.069 33.299 51.17C33.845 51.723 34.186 51.811 34.799 51.196C43.221 42.7233 51.6587 34.2667 60.112 25.826C67.6293 18.2827 75.1353 10.7267 82.63 3.158C86.248 -0.495 90.807 -1.028 94.541 1.815C96.5511 3.30171 97.8087 5.59468 97.9818 8.08885C98.155 10.583 97.2264 13.0278 95.441 14.778C90.141 20.225 84.757 25.585 79.401 30.978C69.2563 41.184 59.109 51.388 48.959 61.59C45.946 64.618 42.942 67.656 39.891 70.645C36.7369 73.7468 31.692 73.7911 28.484 70.745C24.523 66.945 20.675 63.031 16.795 59.145C12.243 54.592 7.733 50 3.16 45.466C1.26001 43.6598 0.128406 41.1914 0 38.573" id="Group_59" fill="#FFFFFF" stroke="none" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <path d="M299.75 23.9587C294.168 17.5116 287.373 12.2256 279.75 8.4017C273.731 5.50171 251.301 -1.35129 227.25 11.7087C213.881 18.9697 209.238 23.1687 201 32.2087" id="Shape_2" fill="none" stroke="#FF605C" stroke-width="7.5" stroke-linecap="round" />
+    <path d="M0 215C0 215 22.1089 186.821 41.0239 192.624C43.687 193.441 59.3691 197.783 47 224C40.3882 238.012 24.1768 228.478 33.25 212.5C42.3232 196.522 59.481 181.762 91.25 180" id="Shape_1" fill="none" stroke="#D25AF7" stroke-width="5.5" stroke-linecap="round" />
+    <g id="Ellipse 2">
+      <path d="M211 0L211 0L211 211L0 211L0 0L211 0Z" id="Ellipse-2" fill="none" stroke="none" transform="translate(59.33203 8)" />
+    </g>
+    <g id="Ellipse 1">
+      <path d="M21 0L21 0L21 21L0 21L0 0L21 0Z" id="Ellipse-1" fill="none" stroke="none" transform="translate(38.33203 8)" />
+    </g>
+    <g id="Vector Smart Object-1">
+      <path d="M31 0L31 0L31 77.001L0 77.001L0 0L31 0Z" id="Vector-Smart-Object-1" fill="none" stroke="none" transform="translate(7.3320312 8)" />
+    </g>
+  </g>
+</svg>

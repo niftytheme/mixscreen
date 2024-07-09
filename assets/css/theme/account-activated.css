@@ -1,0 +1,57 @@
+.content {
+  background: url(../../images/bg/bg-02.png) center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 180px 40px 120px;
+}
+.theme-btn[data-selector="next-btn"] {
+  width: 120px;
+}
+
+.content .content-box {
+  position: relative;
+  background-color: #fff;
+  max-width: 500px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding-top: 90px;
+}
+.content .content-box .box-icon {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+}
+.content .content-box .box-body {
+  padding: 20px;
+}
+.content .content-box .box-title {
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--blue);
+  margin-bottom: 30px;
+}
+.content .content-box .box-para {
+  color: vaR(--gray);
+  font-size: 19px;
+}
+.content .content-box .box-footer {
+  background-color: var(--blue);
+  color: #fff;
+  font-size: 17px;
+  border-radius: 0 0 20px 20px;
+}
+.content .content-box .box-footer .right-sec {
+  padding: 15px 0;
+  border-left: 1px solid #fff;
+}
+.content .content-box .box-footer .left-sec {
+  padding: 15px 0;
+  text-align: center;
+  font-weight: bold;
+}
+.content .content-box .box-footer .number {
+  color: #FFD800;
+}

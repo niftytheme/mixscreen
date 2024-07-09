@@ -1,0 +1,54 @@
+.content {
+  height: 100vh;
+  background: url(../../images/bg/bg-03.svg) center no-repeat;
+  background-size: cover;
+}
+
+.content .login-form {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px 40px 30px;
+  width: 450px;
+}
+.content .login-form .form-img {
+  width: 260px;
+  margin-bottom: 40px;
+}
+.content .login-form .form-title {
+  color: var(--blue);
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.content .login-form .form-para {
+  color: var(--gray);
+  font-size: 17px;
+}
+.content .login-form .form-text-g {
+  margin-bottom: 30px;
+}
+
+.content .login-form .form-g {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.content .login-form .input-label {
+  min-width: 120px;
+  width: 120px;
+  font-size: 16px;
+  color: var(--gray);
+}
+.content .login-form .form-input {
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid var(--gray);
+  border-radius: 50px;
+  padding: 10px 20px;
+  width: 100%;
+  color: var(--oceanDark);
+  font-weight: 700;
+}
+.content .login-form .form-input:focus {
+  outline-color: var(--blue);
+}
