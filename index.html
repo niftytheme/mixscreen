@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+<!--   <link rel="stylesheet" href="assets/css/libs/bootstrap.min.css">-->
   <link rel="stylesheet" href="assets/css/libs/bootstrap-rtl.min.css">
   <link rel="stylesheet" href="assets/css/libs/jquery.dataTables.min.css">
   <link rel="stylesheet" href="assets/css/libs/uicons/uicons-bold-rounded.css">
@@ -130,17 +130,17 @@
           <!-- row -->
           <div class="row align-items-center">
             <!-- col -->
-            <div class="col-6">
+            <div class="col-md-6 mb-md-0 mb-4">
               <!-- page-title -->
-              <h2 class="page-title d-flex align-items-center mb-0" data-gap-x="10px">
+              <h2 class="page-title d-flex align-items-center justify-content-md-start justify-content-center mb-0" data-gap-x="10px">
                 <i class="fi fi-rr-users"></i>
                 بيانــات العمـــــلاء
               </h2>
             </div>
             <!-- col -->
-            <div class="col-6 text-right">
+            <div class="col-md-6 text-md-right text-center">
               <!-- actions -->
-              <div class="actions d-flex align-items-center justify-content-end" data-gap-x="10px">
+              <div class="actions d-flex align-items-center justify-content-md-end justify-content-center flex-wrap" data-gap-x="10px">
                 <button type="button" class="theme-btn --fill-danger rounded-pill --has-icon" data-gap-x="10px">
                   <i class="fi fi-rr-pencil"></i>
                   تعديل
@@ -286,10 +286,12 @@
           },
         },
         "columnDefs": [
-          { width: '1%', targets: 0 }, //step 2, column 1 out of 4
-          { width: '19.8%', targets: 1 }, //step 2, column 2 out of 4
-          { width: '19.8%', targets: 2 }, //step 2, column 3 out of 4
-          { width: '19.8%', targets: 3 }, //step 2, column 4 out of 4
+          { width: '1%', targets: 0 },
+          { width: '19.8%', targets: 1 },
+          { width: '19.8%', targets: 2 },
+          { width: '19.8%', targets: 3 },
+          { width: '19.8%', targets: 4 },
+          { width: '19.8%', targets: 5 },
           {"className": "dt-center", "targets": "_all"}
         ]
       });

@@ -159,12 +159,17 @@ p {
 
 /* top-area */
 .top-area {
-  position: fixed;
+  position: absolute;
   z-index: 2;
   left: 0;
   right: 0;
   top: 0;
   padding: 30px 40px;
+}
+@media (max-width: 767px) {
+  .top-area {
+    padding: 30px 15px;
+  }
 }
 
 /* input-div */
@@ -489,5 +494,17 @@ aside .menu .m-item.active > a .link-text {
 }
 .page-header .actions .theme-btn {
   min-width: 120px;
+}
+/* ----------------------- */
+
+/* :: TABLE-FORM :: */
+.page-content .table-form {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+@media (max-width: 767px) {
+  .page-content .table-form table {
+    min-width: 700px;
+  }
 }
 /* ----------------------- */

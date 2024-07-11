@@ -1,8 +1,8 @@
 body {
   background-color: #fff;
-  min-height: 100vh;
+  height: 100vh;
+  overflow-y: hidden;
 }
-
 body::before {
   position: absolute;
   content: '';
@@ -14,29 +14,56 @@ body::before {
   top: -30px;
   left: 0;
 }
+body::after {
+  position: absolute;
+  content: '';
+  z-index: 1;
+  background: url("../../images/shapes/shape-05.svg") right bottom no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 255px;
+  bottom: -30px;
+  right: 0;
+}
+@media (max-width: 767px) {
+  body {
+    height: unset;
+    overflow-y: auto;
+  }
+}
 
 /* content */
 .content {
-  height: 100vh;
-  padding: 100px 0;
+  min-height: 100vh;
+  padding: 100px 15px;
 }
-
 .content .title {
   color: var(--blue);
   font-size: 36px;
   font-weight: bold;
 }
-
 .content .para {
   color: var(--gray);
   font-size: 24px;
+}
+@media (max-width: 991px) {
+  .content .title {
+    font-size: 26px;
+  }
+  .content .para {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .content {
+    padding: 150px 15px;
+  }
 }
 
 /* inputs */
 .content .inputs {
   gap: 18px;
 }
-
 .content .inputs .code-input {
   width: 80px;
   height: 80px;
@@ -47,42 +74,59 @@ body::before {
   font-size: 36px;
   color: var(--oceanDark);
 }
-
 .content .inputs .code-input:focus {
   outline: 2px solid var(--blue);
 }
-
 .content .inputs .code-input::-webkit-outer-spin-button,
 .content .inputs .code-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 .content .inputs .code-input[type=number] {
   -moz-appearance: textfield;
 }
-
 .content .buttons {
   gap: 20px;
 }
-
 .content .buttons .theme-btn {
   min-width: 240px;
+}
+@media (max-width: 991px) {
+  .content .inputs {
+    gap: 10px;
+  }
+  .content .inputs .code-input {
+    width: 48px;
+    height: 48px;
+  }
+  .content .buttons .theme-btn {
+    padding: 15px 20px;
+    min-width: 200px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 767px) {
+  .content .inputs .code-input {
+    width: 54px;
+    height: 54px;
+  }
+  .content .buttons .theme-btn {
+    min-width: 100%;
+  }
 }
 
 /* copyright-main-section */
 .crt {
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 0;
   right: 0;
   padding: 30px;
+  z-index: 3;
 }
-
 .crt .crt-img {
   width: 90px;
 }
-
 .crt .crt-text {
   font-size: 20px;
   font-weight: 500;

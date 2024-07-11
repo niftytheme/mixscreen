@@ -2,8 +2,9 @@
   height: 100vh;
   background: url(../../images/bg/bg-03.svg) center no-repeat;
   background-size: cover;
+  padding: 30px 15px;
 }
-
+/* login-form */
 .content .login-form {
   background-color: #fff;
   border-radius: 20px;
@@ -27,7 +28,23 @@
 .content .login-form .form-text-g {
   margin-bottom: 30px;
 }
+@media (max-width: 767px) {
+  .content .login-form {
+    width: 100%;
+    max-width: 380px;
+  }
+  .content .login-form .form-img {
+    width: 180px;
+  }
+  .content .login-form .form-title {
+    font-size: 26px;
+  }
+  .content .login-form .form-para {
+    font-size: 16px;
+  }
+}
 
+/* form-g */
 .content .login-form .form-g {
   display: flex;
   align-items: center;
@@ -51,4 +68,9 @@
 }
 .content .login-form .form-input:focus {
   outline-color: var(--blue);
+}
+@media (max-width: 767px) {
+  .content .login-form .form-g {
+    flex-direction: column;
+  }
 }
