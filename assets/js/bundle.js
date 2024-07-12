@@ -43,3 +43,14 @@ document.addEventListener('mouseup', function(e) {
   }
 });
 /* --------------------------------------------------------------------- */
+
+// Get references to the elements
+var toggleButton = document.getElementById('sidebar-toggle');
+var bodyElement = document.body;
+
+// Add event listener to the toggle button
+toggleButton.addEventListener('click', function() {
+  // Toggle the 'sidebar-active' class on the body element
+  bodyElement.classList.toggle('sidebar-active');
+});
+/* --------------------------------------------------------------------- */
