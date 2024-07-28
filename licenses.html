@@ -160,11 +160,7 @@
               <div class="actions d-flex align-items-center justify-content-md-end justify-content-center flex-wrap" data-gap-x="10px" data-gap-y="10px">
                 <button type="button" class="theme-btn --fill-warning rounded-pill --has-icon" data-gap-x="10px" data-toggle="modal" data-target="#addNewLicense">
                   <i class="fi fi-rr-add"></i>
-                  اضافة
-                </button>
-                <button type="button" class="theme-btn --fill-danger rounded-pill --has-icon" data-gap-x="10px">
-                  <i class="fi fi-rr-pencil"></i>
-                  تعديل
+                  اضافة ترخيص جديد
                 </button>
                 <button type="button" class="theme-btn --fill-info rounded-pill --has-icon" data-gap-x="10px">
                   <i class="fi fi-rr-file-export"></i>
@@ -183,35 +179,99 @@
               <thead>
                 <tr>
                   <th>#</th>
+                  <th>اسم النظام</th>
                   <th>كود الترخيص</th>
                   <th>عدد الشاشات</th>
+                  <th>مدة الترخيص</th>
+                  <th>تاريخ التفعيل</th>
                   <th>تاريخ الانتهاء</th>
+                  <th>الحدث</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>1</td>
+                  <td>ميكس سكرين</td>
                   <td>TX9XD-98N7V-6WMQ6-BX7FG</td>
                   <td>32</td>
+                  <td>365 يوم</td>
                   <td>5/6/2025</td>
+                  <td>5/6/2025</td>
+                  <td>
+                    <div class="d-flex align-items-center justify-content-center flex-wrap" data-gap-x="10px" data-gap-y="10px">
+                      <button type="button" class="theme-btn --fun-btn --edit-btn rounded-pill --has-icon" data-gap-x="8px">
+                        <i class="fi fi-rr-file-export"></i>
+                        تعديل
+                      </button>
+                      <button type="button" class="theme-btn --fun-btn --delete-btn rounded-pill --has-icon" data-gap-x="8px">
+                        <i class="fi fi-rr-file-export"></i>
+                        حذف
+                      </button>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>2</td>
+                  <td>ميكس سكرين</td>
                   <td>TX9XD-98N7V-6WMQ6-BX7FG</td>
                   <td>32</td>
+                  <td>365 يوم</td>
                   <td>5/6/2025</td>
+                  <td>5/6/2025</td>
+                  <td>
+                    <div class="d-flex align-items-center justify-content-center flex-wrap" data-gap-x="10px" data-gap-y="10px">
+                      <button type="button" class="theme-btn --fun-btn --edit-btn rounded-pill --has-icon" data-gap-x="8px">
+                        <i class="fi fi-rr-file-export"></i>
+                        تعديل
+                      </button>
+                      <button type="button" class="theme-btn --fun-btn --delete-btn rounded-pill --has-icon" data-gap-x="8px">
+                        <i class="fi fi-rr-file-export"></i>
+                        حذف
+                      </button>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>3</td>
+                  <td>ميكس سكرين</td>
                   <td>TX9XD-98N7V-6WMQ6-BX7FG</td>
                   <td>32</td>
+                  <td>365 يوم</td>
                   <td>5/6/2025</td>
+                  <td>5/6/2025</td>
+                  <td>
+                    <div class="d-flex align-items-center justify-content-center flex-wrap" data-gap-x="10px" data-gap-y="10px">
+                      <button type="button" class="theme-btn --fun-btn --edit-btn rounded-pill --has-icon" data-gap-x="8px">
+                        <i class="fi fi-rr-file-export"></i>
+                        تعديل
+                      </button>
+                      <button type="button" class="theme-btn --fun-btn --delete-btn rounded-pill --has-icon" data-gap-x="8px">
+                        <i class="fi fi-rr-file-export"></i>
+                        حذف
+                      </button>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>4</td>
+                  <td>ميكس سكرين</td>
                   <td>TX9XD-98N7V-6WMQ6-BX7FG</td>
                   <td>32</td>
+                  <td>365 يوم</td>
                   <td>5/6/2025</td>
+                  <td>5/6/2025</td>
+                  <td>
+                    <div class="d-flex align-items-center justify-content-center flex-wrap" data-gap-x="10px" data-gap-y="10px">
+                      <button type="button" class="theme-btn --fun-btn --edit-btn rounded-pill --has-icon" data-gap-x="8px">
+                        <i class="fi fi-rr-file-export"></i>
+                        تعديل
+                      </button>
+                      <button type="button" class="theme-btn --fun-btn --delete-btn rounded-pill --has-icon" data-gap-x="8px">
+                        <i class="fi fi-rr-file-export"></i>
+                        حذف
+                      </button>
+                    </div>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -220,13 +280,24 @@
       </div>
     </div>
     <!-- :: MODALS :: -->
-    <div class="modal fade addNewLicenseModal" id="addNewLicense" tabindex="-1" role="dialog" aria-labelledby="addNewLicenseLabel" aria-hidden="true">
+    <div class="modal fade addDataModal" id="addNewLicense" tabindex="-1" role="dialog" aria-labelledby="addNewLicenseLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-body">
             <h5 class="modal-title mb-4" id="addNewLicenseLabel">إضافة ترخيص جديد</h5>
             <!-- inputs -->
             <form method="post" action="#" class="inputs d-flex flex-column" data-gap-y="20px">
+              <!-- modal-input -->
+              <div class="modal-input">
+                <label class="input-label" for="system">أختر النظام</label>
+                <div class="d-flex align-items-center position-relative">
+                  <i class="fi fi-rr-computer position-absolute"></i>
+                  <select name="system" id="system">
+                    <option value="100">MixScreen</option>
+                    <option value="200">Ratehex</option>
+                  </select>
+                </div>
+              </div>
               <!-- modal-input -->
               <div class="modal-input">
                 <label class="input-label" for="licenseNumber">عدد التراخيص المطلوبة</label>
@@ -237,7 +308,15 @@
               </div>
               <!-- modal-input -->
               <div class="modal-input">
-                <label class="input-label" for="allowedSpace">عدد التراخيص المطلوبة</label>
+                <label class="input-label" for="licenseDuration">مدة الترخيص</label>
+                <div class="d-flex align-items-center position-relative">
+                  <i class="fi fi-rr-license position-absolute"></i>
+                  <input type="text" id="licenseDuration" placeholder="مدة الترخيص" required value="365 يوم" readonly>
+                </div>
+              </div>
+              <!-- modal-input -->
+              <div class="modal-input">
+                <label class="input-label" for="allowedSpace">المساحة المسموح بها</label>
                 <div class="d-flex align-items-center position-relative">
                   <i class="fi fi-rr-license position-absolute"></i>
                   <select name="allowedSpace" id="allowedSpace">
@@ -281,9 +360,13 @@
         },
         "columnDefs": [
           { width: '1%', targets: 0 }, //step 2, column 1 out of 4
-          { width: '33%', targets: 1 }, //step 2, column 2 out of 4
-          { width: '33%', targets: 2 }, //step 2, column 3 out of 4
-          { width: '33%', targets: 3 }, //step 2, column 4 out of 4
+          { width: '20%', targets: 1 }, //step 2, column 2 out of 4
+          { width: '20%', targets: 2 }, //step 2, column 3 out of 4
+          { width: '10%', targets: 3 }, //step 2, column 4 out of 4
+          { width: '10%', targets: 4 }, //step 2, column 4 out of 4
+          { width: '10%', targets: 5 }, //step 2, column 4 out of 4
+          { width: '10%', targets: 6 }, //step 2, column 4 out of 4
+          { width: '15%', targets: 7 }, //step 2, column 4 out of 4
           {"className": "dt-center", "targets": "_all"}
         ]
       });
