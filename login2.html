@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="assets/css/libs/bootstrap.min.css">
+<!--  <link rel="stylesheet" href="assets/css/libs/bootstrap-rtl.min.css">-->
+  <link rel="stylesheet" href="assets/css/libs/uicons/uicons-bold-rounded.css">
+  <link rel="stylesheet" href="assets/css/libs/uicons/uicons-bold-solid.css">
+  <link rel="stylesheet" href="assets/css/libs/uicons/uicons-bold-regular.css">
+  <link rel="stylesheet" href="assets/css/theme/style.css">
+  <link rel="stylesheet" href="assets/css/theme/login2.css">
+  <title>Monitor Activation</title>
+</head>
+<body>
+<div class="container-fluid">
+  <!-- top-area -->
+  <div class="top-area d-flex align-items-center justify-content-between w-100">
+    <button type="button" class="theme-btn --lang-btn"><img src="./assets/images/icons/globe.svg" class="img-fluid mr-2" alt="Globe">English</button>
+    <button type="button" class="btn back-btn --transparent-btn"><img src="./assets/images/icons/chevron-left.svg" class="img-fluid" alt="Back"></button>
+  </div>
+  <!-- content -->
+  <div class="content d-flex align-items-center text-center justify-content-xl-start justify-content-center">
+    <div class="row w-100">
+      <div class="col-lg-6">
+        <!-- form-content -->
+        <div class="form-content">
+          <!-- title & subtitle -->
+          <h2 class="form-title">تسجيل دخول</h2>
+          <p class="form-subtitle">قم بإدخال بريدك الإلكتروني وكلمة المرور</p>
+          <!-- login-form -->
+          <form method="post" action="#" class="login-form">
+            <!-- input-g -->
+            <div class="input-g mt-4">
+              <label class="input-l" for="email">
+                <i class="fi fi-sr-user"></i>
+                <input type="text" name="email" id="email" placeholder="البريد الإلكتروني">
+              </label>
+              <!-- <div class="validation-message">هذا البريد الإلكتروني غير مسجل لدينا</div> -->
+            </div>
+            <!-- input-g -->
+            <div class="input-g mt-3">
+              <label class="input-l" for="password">
+                <i class="fi fi-sr-lock"></i>
+                <input type="password" name="password" id="password" placeholder="كلمة السر">
+              </label>
+                <!-- password-toggle -->
+                <span class="password-toggle">
+                  <i class="fi fi-rr-eye-crossed"></i>
+                </span>
+              <!-- <div class="validation-message">هذا البريد الإلكتروني غير مسجل لدينا</div> -->
+            </div>
+            <!-- input-g -->
+            <div class="input-g mt-3 justify-content-between px-3">
+              <!-- div -->
+              <div class="d-inline-flex align-items-center">
+                <input type="checkbox" class="input-checkbox mr-2" id="remember">
+                <label class="input-checkbox-label mb-0" for="remember">تذكرني</label>
+              </div>
+              <!-- forget-pass -->
+              <a href="#" class="forget-pass d-inline-flex">نسيت كلمة المرور؟</a>
+            </div>
+            <!-- input-g -->
+            <div class="input-g mt-3 px-5">
+              <button type="submit" class="theme-btn --fill-primary --btn-size-lg rounded-pill w-100">
+                تسجيل دخول
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- copyright-main-section -->
+    <div class="crt">
+      <img src="./assets/images/logos/mtx.png" class="img-fluid crt-img mr-2" alt="Matrix">
+      <span class="crt-text">Powered by</span>
+    </div>
+  </div>
+</div>
+<script src="assets/js/jQuery-3.7.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+  const passwordInput = document.getElementById('password');
+  const passwordToggle = document.querySelector('.password-toggle');
+  const eyeIcon = passwordToggle.querySelector('i');
+
+  passwordToggle.addEventListener('click', function() {
+    const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+    passwordInput.setAttribute('type', type);
+
+    if (type === 'text') {
+      eyeIcon.classList.remove('fi-rr-eye-crossed');
+      eyeIcon.classList.add('fi-rr-eye');
+    } else {
+      eyeIcon.classList.remove('fi-rr-eye');
+      eyeIcon.classList.add('fi-rr-eye-crossed');
+    }
+  });
+</script>
+</body>
+</html>
