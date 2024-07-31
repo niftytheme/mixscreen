@@ -30,17 +30,21 @@
       <!-- code-inputs -->
       <form action="#" method="POST" class="code-inputs">
         <!-- inputs -->
-        <div class="inputs d-flex align-items-center flex-wrap justify-content-center mt-lg-5 mt-4 pb-3" dir="ltr">
-          <input type="number" maxlength="1" max="9" name="num-1" class="code-input" oninput="checkInput(this, 1)">
-          <input type="number" maxlength="1" max="9" name="num-2" class="code-input" oninput="checkInput(this, 2)">
-          <input type="number" maxlength="1" max="9" name="num-3" class="code-input" oninput="checkInput(this, 3)">
-          <input type="number" maxlength="1" max="9" name="num-4" class="code-input" oninput="checkInput(this, 4)">
-          <input type="number" maxlength="1" max="9" name="num-5" class="code-input" oninput="checkInput(this, 5)">
-          <input type="number" maxlength="1" max="9" name="num-6" class="code-input" oninput="checkInput(this, 6)">
-          <input type="number" maxlength="1" max="9" name="num-7" class="code-input" oninput="checkInput(this, 7)">
-          <input type="number" maxlength="1" max="9" name="num-8" class="code-input" oninput="checkInput(this, 8)">
-          <input type="number" maxlength="1" max="9" name="num-9" class="code-input" oninput="checkInput(this, 9)">
-          <input type="number" maxlength="1" max="9" name="num-10" class="code-input" oninput="checkInput(this, 10)">
+        <div class="inputs d-flex align-items-center justify-content-center mt-lg-5 mt-4 pb-3" dir="ltr">
+          <div class="input-div">
+            <input type="text" maxlength="6" name="code-1" class="code-input" oninput="checkInput(this, 1)" onpaste="handlePaste(event)">
+          </div>
+          <div class="input-div">
+            <input type="text" maxlength="6" name="code-2" class="code-input" oninput="checkInput(this, 2)">
+          </div>
+          <div class="input-div">
+            <input type="text" maxlength="6" name="code-3" class="code-input" oninput="checkInput(this, 3)">
+          </div>
+        </div>
+        <!-- warning-msg -->
+        <div class="warning-msg">
+          <i class="fi fi-rr-exclamation mr-2"></i>
+          <span>يرجى التأكـــد من الكــود حيث ان الكــود الذي أدخلته ربمــا يكــون خطـــأ او تم تفعيلــه مسبقــــاً</span>
         </div>
         <!-- buttons -->
         <div class="buttons d-flex align-items-center justify-content-center flex-wrap mt-lg-5 mt-4 pt-3">
@@ -67,7 +71,7 @@
         // Check if all inputs have the correct values
         var allInputsValid = true;
         for (var j = 0; j < codeInputs.length; j++) {
-          if (codeInputs[j].value.length !== 1) {
+          if (codeInputs[j].value.length !== 6) {
             allInputsValid = false;
             break;
           }
@@ -86,19 +90,41 @@
     function checkInput(input, currentField) {
       var inputValue = input.value;
 
-      if (inputValue.length === 1) {
-        if (currentField < 10) {
-          var nextField = currentField + 1;
-          var nextInput = document.getElementsByName("num-" + nextField)[0];
-          nextInput.focus();
-        }
-      } else {
-        input.value = inputValue.slice(0, 1);
+      // Remove non-alphanumeric characters
+      inputValue = inputValue.replace(/[^A-Za-z0-9]/g, '');
+
+      // Limit the input length to 6 characters
+      if (inputValue.length > 6) {
+        inputValue = inputValue.slice(0, 6);
       }
 
-      // Trigger input event to recheck input validity
-      var event = new Event("input");
-      input.dispatchEvent(event);
+      input.value = inputValue;
+
+      if (inputValue.length === 6) {
+        if (currentField < 3) {
+          var nextField = currentField + 1;
+          var nextInput = document.getElementsByName("code-" + nextField)[0];
+          nextInput.focus();
+        }
+      }
+    }
+
+    function handlePaste(e) {
+      var clipboardData, pastedData;
+
+      // Get the clipboard data
+      clipboardData = e.clipboardData || window.clipboardData;
+      pastedData = clipboardData.getData('Text');
+
+      // Remove non-alphanumeric characters from pasted data
+      pastedData = pastedData.replace(/[^A-Za-z0-9]/g, '');
+
+      // Distribute the cleaned pasted code to the input fields
+      for (var i = 0; i < codeInputs.length; i++) {
+        var startIndex = (i * 6);
+        var endIndex = (i * 6) + 6;
+        codeInputs[i].value = pastedData.substring(startIndex, endIndex);
+      }
     }
   </script>
 </body>

@@ -64,8 +64,10 @@ body::after {
 .content .inputs {
   gap: 18px;
 }
+.content .inputs .input-div {
+  width: 100%;
+}
 .content .inputs .code-input {
-  width: 80px;
   height: 80px;
   background-color: #ECF3F6;
   border: 0;
@@ -73,6 +75,7 @@ body::after {
   text-align: center;
   font-size: 36px;
   color: var(--oceanDark);
+  width: inherit;
 }
 .content .inputs .code-input:focus {
   outline: 2px solid var(--blue);
@@ -91,13 +94,24 @@ body::after {
 .content .buttons .theme-btn {
   min-width: 240px;
 }
+.warning-msg {
+  color: #AC0510;
+  background-color: #FFEFEF;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.warning-msg i {
+  font-size: 20px;
+  margin-top: 4px;
+}
 @media (max-width: 991px) {
   .content .inputs {
     gap: 10px;
-  }
-  .content .inputs .code-input {
-    width: 48px;
-    height: 48px;
   }
   .content .buttons .theme-btn {
     padding: 15px 20px;
@@ -107,8 +121,8 @@ body::after {
 }
 @media (max-width: 767px) {
   .content .inputs .code-input {
-    width: 54px;
     height: 54px;
+    font-size: 20px;
   }
   .content .buttons .theme-btn {
     min-width: 100%;
